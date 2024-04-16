@@ -17,9 +17,9 @@ ul {
 }
 
 /* hcj 본강의~ */
-.dark {     
+.dark {
   padding: 15px;
-  background-color: #28A0FF;
+  background-color: #28a0ff;
   color: white;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -31,7 +31,7 @@ header {
   color: black;
   padding-top: 20px;
   min-height: 70px;
-  border-bottom: #28A0FFFF 3px solid;
+  border-bottom: #28a0ffff 3px solid;
 }
 
 /* home hcj ~ */
@@ -62,7 +62,7 @@ header nav {
 
 header .highlight,
 header .current a {
-  color: #28A0FFFF;
+  color: #28a0ffff;
   font-weight: bolder;
   font-size: larger;
 }
@@ -115,7 +115,7 @@ header a:hover {
 
 .button_1 {
   height: 38px;
-  background-color: #28A0FFFF;
+  background-color: #28a0ffff;
   border: 0;
   padding: 10 10px;
   color: white;
@@ -164,7 +164,7 @@ ul#service li {
 footer {
   padding: 10px;
   color: white;
-  background-color: #28A0FF;
+  background-color: #28a0ff;
   text-align: center;
 }
 
@@ -206,4 +206,12 @@ footer {
     width: 100%;
     margin-bottom: 5px;
   }
+}
+
+/* 가상클래스 선택자 */
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
 }

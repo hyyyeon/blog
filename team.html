@@ -5,9 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="HTML5, CSS3, Javascript, Web design, 웹디자인">
-  <meta name="description" content="멋진 웹서비스를 구현합니다.">
-  <meta name="author" content="Byoungcheon Lee, 이병천">
   <title>웹프로그래밍 | team </title>
   <link rel="stylesheet" href="./css/style.css">
   <link
@@ -15,6 +12,7 @@
   rel="stylesheet"
   integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
   crossorigin="anonymous"/>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -42,7 +40,8 @@
       <article id="main-col">
         <h1 class="page-title">팀원 소개</h1>
 
-        <!-- 테이블 --><style type="text/css">
+        <!-- 테이블 -->
+        <style type="text/css">
 .tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;border-style:solid;border-width:1px;}
 .tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:0px;color:#333;
   font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
@@ -58,34 +57,41 @@
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-5j4b">이름</th>
-    <th class="tg-i81m">학번</th>
-    <th class="tg-i81m">학과</th>
+    <th class="tg-5j4b">임혜준</th>
+    <th class="tg-i81m">정보보호학과</th>
+    <th class="tg-i81m">4학년</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0vih">2</td>
-    <td class="tg-dzk6">2</td>
-    <td class="tg-dzk6">3</td>
+    <td class="tg-0vih">김태현</td>
+    <td class="tg-dzk6">정보보호학과</td>
+    <td class="tg-dzk6">4학년</td>
   </tr>
   <tr>
-    <td class="tg-amwm">3</td>
-    <td class="tg-baqh">2</td>
-    <td class="tg-baqh">3</td>
+    <td class="tg-amwm">신명진</td>
+    <td class="tg-baqh">정보보호학과</td>
+    <td class="tg-baqh">4학년</td>
   </tr>
   <tr>
-    <td class="tg-0vih">4</td>
-    <td class="tg-dzk6">2</td>
-    <td class="tg-dzk6">3</td>
+    <td class="tg-0vih">최경은</td>
+    <td class="tg-dzk6">정보보호학과</td>
+    <td class="tg-dzk6">4학년</td>
   </tr>
   <tr>
-    <td class="tg-amwm">5</td>
-    <td class="tg-baqh">2</td>
-    <td class="tg-baqh">3</td>
+    <td class="tg-amwm">윤지현</td>
+    <td class="tg-baqh">정보보호학과</td>
+    <td class="tg-baqh">2학년</td>
   </tr>
 </tbody>
 </table>
+
+<div class="container">
+  <div class="box" style="background:blue";></div>
+  <div class="box" style="background:red";></div>
+  <div class="box" style="background:yellow";></div>
+  <div class="box" style="background:green";></div>
+</div>
 
 <br>
 <h3>프로젝트 영상</h3>
@@ -99,10 +105,10 @@
   <section id="newsletter">
     <hr />
     <div class="container">
-      <h1>뉴스레터 구독 신청 </h1>
+      <h3>뉴스레터 구독 신청 </h3>
       <form>
         <input type="email" placeholder="Enter your email...">
-        <button type="submit" class="button_1">구독신청</button>
+        <button type="submit" class="button_1">구독</button>
       </form>
     </div>
   </section>

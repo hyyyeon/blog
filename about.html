@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="keywords"
-      content="HTML5, CSS3, Javascript, Web design, 웹디자인"
-    />
-    <meta name="description" content="멋진 웹서비스를 구현합니다." />
-    <meta name="author" content="Byoungcheon Lee, 이병천" />
     <title>웹프로그래밍 | HCJ</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link
@@ -18,6 +12,35 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 플렉스박스 -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        font-size: 30px;
+        text-align: center;
+      }
+      .flex-item-left {
+        background-color: #f1f1f1;
+        padding: 10px;
+        flex: 50%;
+      }
+      .flex-item-right {
+        background-color: dodgerblue;
+        padding: 10px;
+        flex: 50%;
+      }
+      @media (max-width: 800px) {
+        .flex-container {
+          flex-direction: column;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -77,16 +100,16 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="img/h1.png" class="d-block w-100" alt="..." />
+                <img src="img/h1.png" class="d-block w-100" alt="main" />
               </div>
               <div class="carousel-item">
-                <img src="img/h2.png" class="d-block w-100" alt="..." />
+                <img src="img/h2.png" class="d-block w-100" alt="about" />
               </div>
               <div class="carousel-item">
-                <img src="img/h3.png" class="d-block w-100" alt="..." />
+                <img src="img/h3.png" class="d-block w-100" alt="calender" />
               </div>
               <div class="carousel-item">
-                <img src="img/h4.png" class="d-block w-100" alt="..." />
+                <img src="img/h4.png" class="d-block w-100" alt="memo" />
               </div>
             </div>
             <button
@@ -115,6 +138,14 @@
             </button>
           </div>
           <br /><br />
+
+          <!-- 플렉스 -->
+          <div class="flex-container">
+            <div class="flex-item-left">
+              <img src="img/h4.png" class="d-block w-100" alt="memo" />
+            </div>
+            <div class="flex-item-right">2</div>
+          </div>
 
           <p class="dark">
             본 강의에서는 다음과 같은 내용으로 진행한다. <br />
@@ -150,7 +181,7 @@
         <h1>뉴스레터 구독 신청</h1>
         <form>
           <input type="email" placeholder="Enter your email..." />
-          <button type="submit" class="button_1">구독신청</button>
+          <button type="submit" class="button_1">구독</button>
         </form>
       </div>
     </section>
